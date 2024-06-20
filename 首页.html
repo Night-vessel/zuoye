@@ -1,0 +1,124 @@
+<HTML>
+    <head>
+        <meta charset="utf-8">
+        <title>首页</title>
+    </head>
+
+    <style>
+        #myModal{
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 80%;
+            overflow: auto;
+            background-color: bisque;
+            float: right;
+        }
+
+        .close{
+            color: black;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            background-color: aquamarine;
+        }
+    </style>
+
+    <body>
+        <!-- 顶部 -->
+        <div style="height: 630px;width: 400px;">
+            <div style="height: 10%;width: 100%;margin: auto;"><!--动态,搜索栏，弹窗-->
+                    <b>动态</b>
+                    <input type="search" placeholder="搜索校园通知">
+                    
+                    <img src="../图片素材/01.png" id="imageButton" style="height: 40px; width: 30px;"><!--弹窗-->
+                         <div id="myModal">
+                            <div id="myModalContent">
+                                <span class="close">&times;</span>
+                                <h3>专业信息</h3>
+                                <ul>
+                                    <li>专业概况   招聘信息</li>
+                                    <li>赛事活动   校友之家</li>
+                                    <li>学术讲座   学工之家</li>
+                                    <li>评审公示   捐赠</li>
+                                </ul><br>
+                                <h3>人才培养</h3>
+                                <ul>
+                                    <li>专业风采</li>
+                                    <li>优秀之星</li>
+                                    <li> 研究生教育</li>
+                                    <li>留学生教育</li>
+                                    <li>本科生教育</li>
+                                    <li>继续教育</li>
+                                </ul><br>
+                                <h3>教学资源</h3>
+                                <ul>
+                                    <li>公开课</li>
+                                    <li>获奖成果</li>
+                                    <li>学术期刊</li>
+                                </ul><br>
+                                <h3>教育合作 </h3>
+                                <ul>
+                                    <li>国内合作</li>
+                                    <li>国际合作</li>
+                                    <li>交流研学</li>
+                                </ul><br>
+                                <h3>下载专栏</h3>
+                                <ul>
+                                    <li>教学文档</li>
+                                    <li>毕设模板</li>
+                                </ul><br>
+                                <h3>联系我们</h3>
+                                <ul>
+                                    <li>投递邮箱</li>
+                                    <li>联系方式</li>
+                                    <li>详细地址</li>
+                                </ul><br>
+                            </div>
+                         </div>
+                    
+            </div>
+            <!-- 中上 -->
+            <div style="height: 30%;width: 100%;margin: auto;">
+                <img src="../图片素材/02.jpg" style="height: 80%;width: 90%; margin: auto;">
+            </div>
+            <!-- 中下 -->
+            <div style="height: 30%;width: 100%;margin: auto;">
+                <b>News</b> <b style="float: right;">更多&gt;&gt;</b>
+                <figure>
+                    <img src="../图片素材/0.jpg" style="height: 80%;width: 90%; margin: auto;" alt="2024年人文艺术与数字媒体学院法学院<br>“三位一体”招生专业巡礼|传播学">
+                    <figcaption>2024年人文艺术与数字媒体学院法学院<br>“三位一体”招生专业巡礼|传播学</figcaption>
+                </figure>
+            </div>
+            <!-- 最下方 -->
+            <br><br>
+            <div style="height: 30%;width: 100%;margin: auto;">
+                <a href="./文章链接.html">
+                    <figure>
+                        <img src="../图片素材/435.png" style="height: 60%;width: 90%; margin: auto;" >
+                        <figcaption>青年力量|党的二十大和我的学习路：廖孔港</figcaption>
+                    </figure>
+                </a>
+            </div>
+
+        </div>
+    </body>
+
+    <script>
+        //获取图片按钮和弹窗元素
+        var imageButton = document.getElementById("imageButton")
+        var modal = document.getElementById("myModal")
+        var span=document.getElementsByClassName("close")[0];
+        //点击图片按钮显示弹窗
+        imageButton.onclick=function(){
+            modal.style.display="block";
+        }
+        //点击弹窗中关闭按钮隐藏弹窗
+        span.onclick=function(){
+            modal.style.display="none";
+        }
+    </script>
+</HTML>
